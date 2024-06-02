@@ -5,7 +5,6 @@ import {
   XAxis,
   YAxis,
   Tooltip,
-  CartesianGrid,
   ResponsiveContainer,
 } from "recharts";
 
@@ -36,7 +35,6 @@ const ScatterPlotAlertSeverity = ({ data }) => {
           data={data}
           margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="dest_port" name="Destination Port" tick={false} />
           <YAxis dataKey="severity" name="Severity" />
           <Tooltip
